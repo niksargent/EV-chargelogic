@@ -30,6 +30,11 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Show dist files
+        run: |
+          find dist -maxdepth 3 -type f -print
+
         
       - name: Inspect dist output
         run: |
