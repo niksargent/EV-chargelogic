@@ -30,6 +30,16 @@ jobs:
 
       - name: Build
         run: npm run build
+        
+      - name: Inspect dist output
+        run: |
+          echo "=== dist tree ==="
+          ls -la
+          ls -la dist || true
+          find dist -maxdepth 2 -type f -print || true
+          echo "=== dist/index.html (first 80 lines) ==="
+          sed -n '1,80p' dist/index.html || true
+
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
