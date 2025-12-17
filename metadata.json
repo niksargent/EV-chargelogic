@@ -1,0 +1,5 @@
+{
+  "name": "EV Grid & Charging Simulator",
+  "description": "A sophisticated simulation tool to model total electricity demand and public charging requirements for Electric Vehicles based on fleet parameters, range anxiety, and charging infrastructure availability.",
+  "requestFramePermissions": []
+}
